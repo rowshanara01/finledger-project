@@ -21,7 +21,7 @@ Built the per-user PostgreSQL CRUD API, O(n) statistical Z-score anomaly detecto
 - **How I Solved It:** Switched to single-pass `O(n)` aggregation inside `useMemo` and windowed pagination (15 rows/page), keeping DOM node count constant regardless of dataset size.
 - **Outcome:** Maintained 60fps typing responsiveness even after generating 2,500+ stress-test records.
 
-### Issue 2: Commas inside merchant names breaking exported CSV columns
+#### Issue 2: Commas inside merchant names breaking exported CSV columns
 - **What Went Wrong (Symptom):** Opening exported reports in Excel shifted columns whenever a merchant name contained a comma (e.g., "Cloudflare, Inc.").
 - **Root Cause:** Naive `fields.join(",")` serialization did not quote or escape fields containing commas or double quotes.
 - **How I Solved It:** Implemented an RFC-4180 compliant CSV serializer that wraps special values in double quotes and escapes internal quotes.
