@@ -3,7 +3,7 @@
 > Multi-user financial ledger with PostgreSQL persistence, full CRUD, Z-score outlier flagging, and formula-safe CSV export
 
 **Live Demo:** https://finledger-demo.example.com  
-**Tech Stack:** React · TypeScript · Express · PostgreSQL · Tailwind CSS · CSV Engine  
+**Tech Stack:** React · TypeScript · Express · PostgreSQL · Tailwind CSS · CSV Engine  and nxins
 **Target Role Alignment:** Full-Stack / React Engineer
 
 ---
