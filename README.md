@@ -11,7 +11,7 @@
 ## 1. Problem Statement
 Growing teams struggle to spot sudden SaaS or cloud billing spikes inside raw bank exports without exporting data to slow spreadsheets.
 
-## 2. My Specific Contribution
+#### 2. My Specific Contribution
 Built the per-user PostgreSQL CRUD API, O(n) statistical Z-score anomaly detector, multi-currency UI, 2,500-row benchmark mode, and authenticated RFC-4180 CSV export.
 
 ## 3. Issues I Faced & How I Solved Them
