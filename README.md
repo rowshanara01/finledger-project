@@ -33,7 +33,7 @@ Built the per-user PostgreSQL CRUD API, O(n) statistical Z-score anomaly detecto
 - **How I Solved It:** Replaced the flat threshold with per-category Z-score math (`z = (amount - mean) / stdDev`), flagging outliers relative to each category baseline.
 - **Outcome:** Eliminated false anomaly flags on payroll while accurately catching cloud billing spikes.
 
-### Issue 4: Multi-user data bleed, unguarded benchmark wipes, and CSV formula injection
+#### Issue 4: Multi-user data bleed, unguarded benchmark wipes, and CSV formula injection
 - **What Went Wrong (Symptom):** A single global ledger table mixed records across users, one-click stress testing truncated live entries, and merchant notes starting with "=" could execute formulas in Excel.
 - **Root Cause:** Endpoints lacked user-scoped SQL predicates (`WHERE user_id = $1`), lacked confirmation before benchmark resets, and exported raw cell strings without formula neutralization.
 - **How I Solved It:** Added per-user Bearer authentication and `user_id` isolation across PostgreSQL CRUD routes, inline edit/delete controls, two-step reset confirmation, and formula-safe RFC-4180 CSV downloads via authenticated Blob fetch.
