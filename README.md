@@ -49,7 +49,7 @@ Sub-16ms filter updates across 2,500+ transactions, automatic >1.5σ anomaly det
 - [x] `.env.example` provided with zero committed secrets
 - [x] Conventional commit history (`feat:`, `fix:`, `perf:`)
 
-## 6. Local Setup
+#### 6. Local Setup
 ```bash
 git clone https://github.com/username/finledger
 cd finledger-full-stack-expense-anomaly-analytics
