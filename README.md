@@ -14,7 +14,7 @@ Growing teams struggle to spot sudden SaaS or cloud billing spikes inside raw ba
 #### 2. My Specific Contribution
 Built the per-user PostgreSQL CRUD API, O(n) statistical Z-score anomaly detector, multi-currency UI, 2,500-row benchmark mode, and authenticated RFC-4180 CSV export.
 
-## 3. Issues I Faced & How I Solved Them
+#### 3. Issues I Faced & How I Solved Them
 ### Issue 1: UI frame drops when filtering 2,500+ transaction rows on every keystroke
 - **What Went Wrong (Symptom):** Typing in the search bar caused noticeable input lag because 2,500 DOM rows and chart totals recalculated synchronously.
 - **Root Cause:** Rendering thousands of table rows simultaneously overwhelmed layout recalculation, and category totals looped over the dataset multiple times.
