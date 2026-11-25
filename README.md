@@ -42,7 +42,7 @@ Built the per-user PostgreSQL CRUD API, O(n) statistical Z-score anomaly detecto
 #### 4. Measurable Impact & Engineering Highlights
 Sub-16ms filter updates across 2,500+ transactions, automatic >1.5σ anomaly detection, and multi-tenant PostgreSQL persistence.
 
-## 5. Quality & Production Checklist
+#### 5. Quality & Production Checklist
 - [x] Live demo deployed and publicly accessible
 - [x] First-run Admin setup + automatic PostgreSQL table seeding
 - [x] Explicit loading, empty, and error fallback states
