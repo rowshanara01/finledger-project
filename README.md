@@ -39,7 +39,7 @@ Built the per-user PostgreSQL CRUD API, O(n) statistical Z-score anomaly detecto
 - **How I Solved It:** Added per-user Bearer authentication and `user_id` isolation across PostgreSQL CRUD routes, inline edit/delete controls, two-step reset confirmation, and formula-safe RFC-4180 CSV downloads via authenticated Blob fetch.
 - **Outcome:** Complete per-account data isolation, full CRUD with multi-currency support, and zero spreadsheet injection risk.
 
-## 4. Measurable Impact & Engineering Highlights
+#### 4. Measurable Impact & Engineering Highlights
 Sub-16ms filter updates across 2,500+ transactions, automatic >1.5σ anomaly detection, and multi-tenant PostgreSQL persistence.
 
 ## 5. Quality & Production Checklist
