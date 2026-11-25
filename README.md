@@ -27,7 +27,7 @@ Built the per-user PostgreSQL CRUD API, O(n) statistical Z-score anomaly detecto
 - **How I Solved It:** Implemented an RFC-4180 compliant CSV serializer that wraps special values in double quotes and escapes internal quotes.
 - **Outcome:** 100% clean CSV imports across Excel and Google Sheets.
 
-### Issue 3: Flat dollar thresholds flagging normal payroll as anomalies
+#### Issue 3: Flat dollar thresholds flagging normal payroll as anomalies
 - **What Went Wrong (Symptom):** A static threshold (amount > $1,000) falsely flagged routine contractor payroll while missing $400 spikes in low-cost SaaS subscriptions.
 - **Root Cause:** Each expense category has a completely different baseline mean and variance.
 - **How I Solved It:** Replaced the flat threshold with per-category Z-score math (`z = (amount - mean) / stdDev`), flagging outliers relative to each category baseline.
