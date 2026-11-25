@@ -1,4 +1,4 @@
-# FinLedger — Full-Stack Expense & Anomaly Analytics
+#### FinLedger — Full-Stack Expense & Anomaly Analytics
 
 > Multi-user financial ledger with PostgreSQL persistence, full CRUD, Z-score outlier flagging, and formula-safe CSV export
 
